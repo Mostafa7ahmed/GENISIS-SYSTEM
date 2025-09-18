@@ -75,11 +75,26 @@ src/
 ```
 
 ## 🚀 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mostafa7ahmed/GENISIS-SYSTEM.git
+   cd GENISIS-SYSTEM
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   ng serve
+   ```
+4. Open in your browser:
+   ```
+   http://localhost:4200
+   ```
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/Mostafa7ahmed/GENISIS-SYSTEM.git
-cd GENISIS-SYSTEM
+---
+
 
 
 ## 👨‍💻 Developed By
@@ -89,5 +104,3 @@ cd GENISIS-SYSTEM
 🚀 Frontend Developer | Angular • React • Next.js  
 📧 Email: [mostafahamed3003@gmail.com](mailto:mostafahamed3003@gmail.com)  
 🌐 Portfolio: [portfoliomostafa-hamed.vercel.app](https://portfoliomostafa-hamed.vercel.app/)  
-
-
