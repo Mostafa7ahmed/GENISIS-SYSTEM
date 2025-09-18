@@ -3,6 +3,7 @@ import { authGuard } from './Core/guards/auth.guard';
 import { isAuthGuard } from './Core/guards/is-auth.guard';
 import { MainOutlet } from './Layout/main-outlet/main-outlet';
 import { Home } from './Pages/home/home';
+import { MainlayoutNonNav } from './Layout/mainlayout-non-nav/mainlayout-non-nav';
 
 export const routes: Routes = [
   {
@@ -19,7 +20,7 @@ export const routes: Routes = [
         component: Home,
       },
       {
-        path: 'client',
+        path: 'clients',
         loadComponent: () =>
           import('./Pages/client/client').then(m => m.Client),
       },
@@ -28,7 +29,22 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./Pages/client-profile/client-profile').then(m => m.ClientProfile),
       },
-      
+
+
     ]
-  }
+  },
+  {
+    path: '',
+    component: MainlayoutNonNav,
+    children: [
+      {
+        path: 'profile/:id',
+        loadComponent: () =>
+          import('./Pages/client-profile/client-profile').then(m => m.ClientProfile),
+      },
+
+    
+    ]
+  },
+
 ];

@@ -24,6 +24,9 @@ body {
 .big {
     font-size: 60px;
 }
+.h-90{
+    height: 90%;
+}
 
 :root {
     --blue: #00BEC5;
@@ -95,9 +98,8 @@ body {
     height: 26px;
 }
 .team .right-box span {
-    font-size: 100px;
+    font-size: 75px;
     color: var(--blue);
-    margin-top: -16px;
 }
 .team .right-box .text-end {
     max-height: 100px;
@@ -116,6 +118,22 @@ body {
     left: 84%; 
     background-color: transparent;
     z-index: 10;
+}
+.team .card .tagٍStates {
+    top: 20px;
+    background-color: transparent;
+    z-index: 10;
+    left: 15px;
+    background: #171818;
+    padding: 10px;
+    border-radius: 5px;
+    color: #00BEC5;
+    /* width: 82px; */
+    height: 30px;
+    /* opacity: 1; */
+    /* top: 590px; */
+    /* left: 488px; */
+    border-radius: 5px;
 }
 .team .card img {
     border-top-left-radius: 9px;
@@ -141,8 +159,10 @@ body {
 }
 .card-box {
     overflow-y: auto;
-    min-height: 1185px;
     max-height: 1185px;
+    height: fit-content;
+
+
     padding-right: 0px;
 }
 .card-box::-webkit-scrollbar {
