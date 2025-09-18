@@ -1,15 +1,35 @@
-# 🧠 Angular Project Structure
+# GENESIS – Portfolio Website (Angular)
 
-This project is a modern Angular application that demonstrates a scalable and maintainable architecture. It leverages Bootstrap for responsive UI design, FontAwesome for a rich icon set, and JWT Decode for handling user authentication and session management.
+A modern and responsive **portfolio website** built with **Angular**.  
+The project is designed to showcase projects, share the story behind the brand, and provide clear ways to connect and collaborate.
 
 ---
 
-## 🚀 Key Technologies
+## 🌟 Overview
 
--   **Angular 20**: The core framework for building the single-page application.
--   **Bootstrap**: Used for creating responsive layouts and UI components, ensuring a consistent look and feel across devices.
--   **FontAwesome**: Provides a comprehensive library of icons used throughout the application to enhance user experience.
--   **JWT Decode**: A lightweight library used to decode JSON Web Tokens (JWTs) on the client-side for managing user authentication state and permissions.
+**GENESIS** is a clean, minimal, and professional portfolio system.  
+It’s perfect for agencies, freelancers, or teams who want to highlight their work and create a strong online presence.
+
+---
+
+## 📂 Main Sections
+
+- **Home** – Engaging landing page with a professional first impression.  
+- **Projects** – A showcase section for works, case studies, or creative outputs.  
+- **Our Story** – Introduces the mission, vision, and background.  
+- **Join Our Team** – A page for recruitment and collaboration opportunities.  
+- **Contact Us** – Easy-to-use contact section for communication.  
+
+---
+
+
+## 🎨 Features
+
+- Developed with **Angular** for scalability and performance.  
+- Responsive design that works on all devices.  
+- Modular and reusable components.  
+- Clean folder structure for maintainability.  
+- Ready to be extended with APIs and dynamic content.  
 
 ---
 
@@ -54,32 +74,13 @@ src/
 └── styles.css
 ```
 
+## 🚀 Getting Started
 
-## Installation
-
-1. Clone the repository
+### 1️⃣ Clone the repository
 ```bash
-git clone <repository-url>
-cd structureAngular
-```
+git clone https://github.com/Mostafa7ahmed/GENISIS-SYSTEM.git
+cd GENISIS-SYSTEM
 
-2. Install dependencies
-```bash
-npm install
-```
-
-3. Start the development server
-```bash
-ng serve
-```
-
-4. Navigate to `http://localhost:4200/`
-
-## Development
-
-- Run `ng generate component component-name` to generate a new component
-- Run `ng build` to build the project
-- Run `ng test` to execute unit tests
 
 ## 👨‍💻 Developed By
 
@@ -88,4 +89,5 @@ ng serve
 🚀 Frontend Developer | Angular • React • Next.js  
 📧 Email: [mostafahamed3003@gmail.com](mailto:mostafahamed3003@gmail.com)  
 🌐 Portfolio: [portfoliomostafa-hamed.vercel.app](https://portfoliomostafa-hamed.vercel.app/)  
+
 
