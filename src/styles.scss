@@ -62,7 +62,7 @@ body {
 /* Start team */
 .team-container{
     background-color: var(--dark);
-    height: 1700px;
+    height: 1700px !important;
 }
 .team .team-container h1{
     font-size: 60px;
@@ -159,8 +159,8 @@ body {
 }
 .card-box {
     overflow-y: auto;
+    min-height: 1185px;
     max-height: 1185px;
-    height: fit-content;
 
 
     padding-right: 0px;
@@ -182,7 +182,7 @@ body {
         max-height: 480px !important;
     }
     .team-container {
-        height: 1000px !important;
+        height: 1160px  !important;
     }
     .team .right-box p {
         font-size: 10px;

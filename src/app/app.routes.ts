@@ -1,3 +1,4 @@
+import { ProjectDetails } from './Pages/project-details/project-details';
 import { Routes } from '@angular/router';
 import { authGuard } from './Core/guards/auth.guard';
 import { isAuthGuard } from './Core/guards/is-auth.guard';
@@ -24,13 +25,24 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./Pages/client/client').then(m => m.Client),
       },
+
       {
-        path: 'client/:id',
+        path: 'signup',
         loadComponent: () =>
-          import('./Pages/client-profile/client-profile').then(m => m.ClientProfile),
+          import('./Pages/Auth/signup/signup').then(m => m.Signup),
       },
 
+      {
+        path: 'createaccount',
+        loadComponent: () =>
+          import('./Pages/Auth/create-account/create-account').then(m => m.CreateAccount),
+      },
 
+      {
+        path: 'feedback',
+        loadComponent: () =>
+          import('./Pages/feed-back-page/feed-back-page').then(m => m.FeedBackPage),
+      },
     ]
   },
   {
@@ -38,12 +50,26 @@ export const routes: Routes = [
     component: MainlayoutNonNav,
     children: [
       {
-        path: 'profile/:id',
+        path: 'client/:id',
         loadComponent: () =>
           import('./Pages/client-profile/client-profile').then(m => m.ClientProfile),
       },
+      {
+        path: 'profile/:id',
+        loadComponent: () =>
+          import('./Pages/profile/profile').then(m => m.Profile),
+      },
+      {
+        path: 'notifications',
+        loadComponent: () =>
+          import('./Pages/notifaction/notifaction').then(m => m.Notifaction),
+      },
+      {
+        path: 'projectDetails/:id',
+        loadComponent: () =>
+          import('./Pages/project-details/project-details').then(m => m.ProjectDetails),
+      },
 
-    
     ]
   },
 

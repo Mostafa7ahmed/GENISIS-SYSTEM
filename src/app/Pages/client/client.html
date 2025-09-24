@@ -1,5 +1,5 @@
 <div class="text-white team">
-    <h1 class="mt-5 text-end big">THE TEAM</h1>
+    <h1 class="mt-5 text-end big">CLIENTS</h1>
     <div class="container p-md-5 p-3 rounded team-container">
         <div class=" row g-3 g-lg-4">
             <div class="col-lg-6 pb-3 pe-lg-3 ps-lg-2 ">
@@ -39,10 +39,12 @@
 
                         <!-- القائمة -->
                         <ul class="p-3 rounded-3 menu list-unstyled text-end" [class.menu-open]="isOpen">
-                            <li *ngFor="let option of options" (click)="selectOption(option)"
+                            @for ( option of options; track $index) {
+                               <li (click)="selectOption(option)"
                                 [class.active]="selected === option">
                                 {{ option }}
                             </li>
+                            }
                         </ul>
                     </div>
 
@@ -71,7 +73,7 @@
                         @if (selected === 'ALL CLIENTS' || project.status.toUpperCase() === selected.toUpperCase()) {
 
                 <div class="col-lg-3 col-md-4 col-12 mt-3 me-0 cards">
-                    <a [routerLink]="['/project', project.id]" class="text-decoration-none text-white">
+                    <a [routerLink]="['/client', project.id]" class="text-decoration-none text-white">
                         <div class="card position-relative">
                             <div class="tag tagٍStates position-absolute px-2 py-1">
                                 <span class="m-0">{{ project.tag }}</span>
